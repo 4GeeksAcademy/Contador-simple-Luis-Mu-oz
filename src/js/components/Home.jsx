@@ -1,28 +1,24 @@
 import React from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 
-//create your first component
-const Home = () => {
+function Home({ dig6, dig5, dig4, dig3, dig2, dig1 }) {
 	return (
-		<div className="text-center">
-            
-
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		
+		<div className="container text-center mt-5">
+			<div className="d-flex justify-content-center bg-dark p-3 rounded">
+				<div className="card bg-dark text-white m-1 p-3 fs-1">
+					<i className="fa-solid fa-clock"></i>
+				</div>
+				<div className="card bg-dark text-white m-1 p-3 fs-1">{dig6}</div>
+				<div className="card bg-dark text-white m-1 p-3 fs-1">{dig5}</div>
+				<div className="card bg-dark text-white m-1 p-3 fs-1">{dig4}</div>
+				<div className="card bg-dark text-white m-1 p-3 fs-1">{dig3}</div>
+				<div className="card bg-dark text-white m-1 p-3 fs-1">{dig2}</div>
+				<div className="card bg-dark text-white m-1 p-3 fs-1">{dig1}</div>
+			</div>
 		</div>
+		
 	);
-};
+}
 
 export default Home;
